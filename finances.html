@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<title>Money Book</title>
+			<link rel="stylesheet" href="style.css" />	
+			<link href='http://fonts.googleapis.com/css?family=Happy+Monkey' rel='stylesheet' type='text/css'>
+			<link href='http://fonts.googleapis.com/css?family=Gilda+Display' rel='stylesheet' type='text/css'>
+		</head>
+		
+		<body> 
+		 
+			<div id="header_content" class="soft-padding-all">
+				<h1>Money Book</h1>
+			</div> <!--header_content closing tag-->
+			
+			<div id="form_area">
+				<form action="somescript.php" method="post">
+					<div id="transaction_types">
+						<label>Income:</label>
+						<input class="extra-hard-margin-right" type="radio" name="transaction_type" value="Income"/>
+						<label>Expense:</label>
+						<input type="radio" name="transaction_type" value="Expense" />
+					<p><input name="amount" placeholder="Amount" /></p>
+					</div> <!--transaction_type$ closing tag-->
+					<div id="description_notes">
+						<label>Description:</label>
+						<p><textarea rows="6" cols="35" name="description" placeholder="Describe transaction."/></textarea></p>
+					</div> <!--discription_notes closing tag-->		
+					<div id="calander_info">
+						<label>Date:</label>
+						<p><input name="date" type="date" placeholder="Remember when?" /></p>
+						<p><input type="submit" name="submit" id="submit"></p>			
+					</div>	<!--calander_info closing tag-->
+				</form>
+			</div> <!--form_area closing tag-->
+			
+			<div id="footer_area" style="text-align:center">
+				<p>Created and designed by Dyana & Charles Sprayberry.</p>	
+			</div> <!--footer_area closing tag -->
+			
+		</body>
+</html>
