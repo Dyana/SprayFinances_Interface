@@ -1,42 +1,61 @@
 <!DOCTYPE html>
 <html>
 		<head>
-			<title>Money Book</title>
+			<title>Spray Finances</title>
 			<link rel="stylesheet" href="style.css" />	
-			<link href='http://fonts.googleapis.com/css?family=Happy+Monkey' rel='stylesheet' type='text/css'>
-			<link href='http://fonts.googleapis.com/css?family=Gilda+Display' rel='stylesheet' type='text/css'>
+			<link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+			<link href='http://fonts.googleapis.com/css?family=Ubuntu|Convergence' rel='stylesheet' type='text/css'>
 		</head>
 		
 		<body> 
-		 
-			<div id="header_content" class="soft-padding-all">
-				<h1>Money Book</h1>
-			</div> <!--header_content closing tag-->
-			
-			<div id="form_area">
-				<form action="somescript.php" method="post">
-					<div id="transaction_types">
-						<label>Income:</label>
-						<input class="extra-hard-margin-right" type="radio" name="transaction_type" value="Income"/>
-						<label>Expense:</label>
-						<input type="radio" name="transaction_type" value="Expense" />
-					<p><input name="amount" placeholder="Amount" /></p>
-					</div> <!--transaction_type$ closing tag-->
-					<div id="description_notes">
-						<label>Description:</label>
-						<p><textarea rows="6" cols="35" name="description" placeholder="Describe transaction."/></textarea></p>
-					</div> <!--discription_notes closing tag-->		
-					<div id="calander_info">
-						<label>Date:</label>
-						<p><input name="date" type="date" placeholder="Remember when?" /></p>
-						<p><input type="submit" name="submit" id="submit"></p>			
-					</div>	<!--calander_info closing tag-->
-				</form>
-			</div> <!--form_area closing tag-->
-			
-			<div id="footer_area" style="text-align:center">
-				<p>Created and designed by Dyana & Charles Sprayberry.</p>	
-			</div> <!--footer_area closing tag -->
-			
+			<div id="container">
+				<div id="header_content" class="soft-padding-all">
+					<h1>Spray Finances</h1>
+				</div> 
+				<div id="body_content">
+					<div id="form_area">
+						<form action="somescript.php" method="post">
+							<div id="transaction_types">
+								<label>Income:</label>
+								<input class="extra-hard-margin-right" type="radio" name="transaction_type" value="Income"/>
+								<label>Expense:</label>
+								<input type="radio" name="transaction_type" value="Expense" />
+								<p><input name="amount" placeholder="Amount" /></p>
+							</div> 
+							<div id="description_notes">
+								<label>Description:</label>
+								<p><textarea rows="6" cols="35" name="description" placeholder="Describe transaction."/></textarea></p>
+							</div> 		
+							<div id="calander_info">
+								<label>Date:</label>
+								<p><input  name="date" type="date" placeholder="Remember when?" /></p>
+								<p><input type="submit" name="submit" id="submit"></p>			
+							</div>	
+						</form>	
+					</div> 
+					<div id="dashboard">
+						<div id="income-stat" class="stat-box">
+							<p>$999,999,999.00</p>
+							<p class="stat-type">Income</p>
+						</div> 
+						<div id="expense-stat" class="stat-box">
+							<p>$999,999,999.00</p>
+							<p class="stat-type">Expense</p>
+						</div> 
+						<div id="balance-stat" class="stat-box">
+							<p>$999,999,999.00</p>
+							<p class="stat-type">Balance</p>
+						</div> 
+						<div id="demo-transactions" class="demo-text">
+							<p>Recent Transactions:</br>mm/dd/yyyy Income: $2000.00</br>Description: Little Pond Farms</p>
+							<p>mm/dd/yyyy</br>Expense: $100.00</br>Description: Water Bill</p>
+							<p>mm/dd/yyyy</br>Expense: $50.00</br>Description: Red Lobster</p>
+							<p>mm/dd/yyyy</br>Expense: $10.00</br>Description: Rite Aid</p>
+							<p>mm/dd/yyyy</br>Expense: $30.00Description: Gas, Timmy's Quick Stop. This is an even longer description to see what this will be looking like...and it looks fine.</p>
+						</div>
+					</div> 
+				</div> 
+				<div id="footer" style="text-align:center"></div> 
+			</div>
 		</body>
 </html>
