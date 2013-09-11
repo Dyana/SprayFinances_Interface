@@ -38,12 +38,12 @@ h1 {
 	background: #1EB164;
 }
 
-#header_content {
+#header-content {
 	background-color: #515151;
-	border-bottom: 1px solid #22E180;
+	border-bottom: 2px solid grey;
 }
 
-#form_area {
+#form-area {
 	float: right;
 	margin: 2em 4em 2em 0;
 	padding: 1em 2em 0 2em;
@@ -83,16 +83,13 @@ h1 {
 
 .stat-type { padding-top: 0; }
 
-.demo-text, demo-transactions {
+#transactions {
 	font-size: 90%;
 	padding-top: 10em;
 }
 
-#transaction_types {
-	margin-right: 35em;
-}
 
-#description_notes, #calander_info {
+#description-notes, #calander-info {
 	padding-top: 2em;
 	border-top: 1px solid #22E180;
 }
@@ -100,11 +97,6 @@ h1 {
 #footer {
 	
 }
-
-
-
-
-
 
 
 .soft-padding-all, .soft-padding-top {padding-top: .5em; }
