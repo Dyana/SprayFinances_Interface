@@ -1,23 +1,26 @@
-body {
-	font-family: Convergence, arial, helvectica;
+body, input, textarea {
+	font-family: Quattrocento, georgia, helvectica;
 	font-size: 90%;
 	margin: 0;
 }
 
 html, body {
 	height: 100%;
+	width: 100%;
 }
 
-#container { 
-	min-width: 1100px;
+#wrap {
 	min-height: 100%;
-	position: relative;
- }
+	height: auto !important;
+	height: 100%;
+	min-width: 1100px;
+	margin: 0 auto 100px;
+}
 
 p {
-	line-height: 2em;
+	
 	margin: 0;
-	padding: 1em 0 1em 0;	
+	padding: 1em 0 1em 0;
 }
 
 h1 {
@@ -26,14 +29,21 @@ h1 {
 	margin-left: 1em; 	
 }	
 
+h2, label { 
+	font-family: Lato, Arial; 
+	font-weight: 300;
+	font-size: 120%;
+}
+
 #submit {
 	color: white;
-	font-size: 18px;
-	font-family: Convergence, Arial, helvectica;
-	width: 75px;
-	height: 45px;
+	font-size: 120%;
+	text-align: center;
+	font-family: Quattrocento, georgia, helvectica;
+	width: 5em;
+	height: 2.5em;
 	border: 1.5px solid #22E180;
-	margin: 0;
+	margin: 1em 0 1em 0;
 	padding: 0;
 	background: #1EB164;
 }
@@ -44,60 +54,86 @@ h1 {
 }
 
 #form-area {
+	line-height: 2em;
 	float: right;
-	margin: 2em 4em 2em 0;
-	padding: 1em 2em 0 2em;
+	margin: 2em 4em 0 0;
+	padding: 2em 2em 0 2em;
 	width: 30%;
 	border: 1px solid black;
 }
 
 #dashboard { 
-	height: relative;
+	line-height: 1.5em;
+	height: 100%;
 	float: left;
-	margin: 2em 0 0 2em;
+	margin: 2em 0 0 4em;
 	border: 1px solid black;
 	width: 35em;
-	padding: 1em 1em 0 1em;
+	padding: 2em 1em 1em 1em;
 }
 
-#income-stat {
-	border-color: grey;
-}
+.stat-area { margin-bottom: 3em; }
 
-#expense-stat {
-	border-color: red;
-}
-
-#balance-stat {
-	border-color: blue;
-}
-
-.stat-box {
-	height: 4em;
-	width: 9em;
+#income-stat, #expense-stat, #balance-stat {
 	text-align: center;
-	border: 1px solid;
+	vertical-align: middle;
 	float: left;
-	margin-right: 2.5em;
+	padding: 1em 1em 1em 1em;
+	margin-right: 2em;
+	border: 1px solid #22E180;
 }
-
-.stat-type { padding-top: 0; }
 
 #transactions {
-	font-size: 90%;
 	padding-top: 10em;
 }
 
+.recent-transactions-title {
+	border-top: 1px solid #22E180;
+	padding-top: 1em;
+}
 
 #description-notes, #calander-info {
 	padding-top: 2em;
 	border-top: 1px solid #22E180;
 }
 
-#footer {
-	
+.transaction-space {
+	margin-bottom: 2em;
+	padding: 1em 1em 9em 1em;
+	border-bottom: 1px solid #22E180
 }
 
+.transaction-date {
+	float: right;
+	margin-bottom: .5em;
+}
+
+.transaction-amount {
+	float: left;
+	margin: 0;
+	margin-bottom: .5em;
+}
+
+.transaction-description {
+	float: left;
+	clear: both;
+	padding-top: 1em;
+	
+}
+.footer {
+	font-size: 50%;
+	background-color: #515151;
+	border-top: 2px solid grey;
+	
+}
+.footer, .push {
+	width: 100%;
+	height: 100px;
+	clear: both;
+	position: relative;
+	bottom: 0;
+	margin: 0;
+}
 
 .soft-padding-all, .soft-padding-top {padding-top: .5em; }
 .soft-padding-all, .soft-padding-bottom {padding-bottom: .5em; }
@@ -119,4 +155,7 @@ h1 {
 .hard-margin-all, hard-margin-left {margin-left: 1em; }
 .hard-margin-all, hard-margin-right {margin-right: 1em; }
 
+.extra-hard-margin-top {margin-top: 2em;}
 .extra-hard-margin-right {margin-right: 2em;}
+.extra-hard-margin-bottom {margin-bottom: 2em;}
+.extra-hard-margin-left {margin-left: 2em;}

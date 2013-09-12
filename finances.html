@@ -4,58 +4,87 @@
 			<title>Spray Finances</title>
 			<link rel="stylesheet" href="style.css" />	
 			<link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
-			<link href='http://fonts.googleapis.com/css?family=Ubuntu|Convergence' rel='stylesheet' type='text/css'>
+			<link href='http://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
+			<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 		</head>
 		
 		<body> 
 			<div id="container">
+				<div id="wrap">
 				<div id="header-content" class="soft-padding-all">
 					<h1>Spray Finances</h1>
-				</div> 
-				<div id="body-content">
+				</div> <!--header-content tag-->
 					<div id="form-area">
 						<form action="somescript.php" method="post">
 							<div id="transaction-types">
-								<label>Income:</label>
+								<label class="soft-margin-right">Income:</label>
 								<input class="extra-hard-margin-right" type="radio" name="transaction-type" value="Income"/>
-								<label>Expense:</label>
+								<label class="soft-margin-right">Expense:</label>
 								<input type="radio" name="transaction-type" value="Expense" />
 								<p><input name="amount" placeholder="Amount" /></p>
-							</div> 
+							</div> <!--transaction-types tag-->
 							<div id="description-notes">
 								<label>Description:</label>
 								<p><textarea rows="6" cols="35" name="description" placeholder="Describe transaction."/></textarea></p>
-							</div> 		
+							</div> 	<!--description-notes tag-->	
 							<div id="calander-info">
 								<label>Date:</label>
 								<p><input  name="date" type="date" placeholder="Remember when?" /></p>
 								<p><input type="submit" name="submit" id="submit"></p>			
-							</div>	
+							</div>	<!--calander-info tag-->
 						</form>	
-					</div> 
+					</div> <!--form-area tag-->
 					<div id="dashboard">
-						<div id="income-stat" class="stat-box">
-							<p>$999,999,999.00</p>
-							<p class="stat-type">Income</p>
-						</div> 
-						<div id="expense-stat" class="stat-box">
-							<p>$999,999,999.00</p>
-							<p class="stat-type">Expense</p>
-						</div> 
-						<div id="balance-stat" class="stat-box">
-							<p>$999,999,999.00</p>
-							<p class="stat-type">Balance</p>
-						</div> 
+						<div class="stat-area">
+							<div id="income-stat">
+								<p class="stat-box">$999,999,999.00</p>
+								<div><h2>Income</h2></div>
+							</div> <!--income-stat tag-->
+							<div id="expense-stat">
+								<p class="stat-box">$999,999,999.00</p>
+								<div><h2>Expense</h2></div>
+							</div> <!--expense-stat tag-->
+							<div id="balance-stat">
+								<p class="stat-box">$999,999,999.00</p>
+								<div><h2>Balance</h2></div>
+							</div> <!--balance-stat tag-->
+						</div><!--stat-area tag-->
 						<div id="transactions">
-							<p>Recent Transactions:</br>mm/dd/yyyy Income: $2000.00</br>Description: Little Pond Farms</p>
-							<p>mm/dd/yyyy</br>Expense: $100.00</br>Description: Water Bill</p>
-							<p>mm/dd/yyyy</br>Expense: $50.00</br>Description: Red Lobster</p>
-							<p>mm/dd/yyyy</br>Expense: $10.00</br>Description: Rite Aid</p>
-							<p>mm/dd/yyyy</br>Expense: $30.00</br>Description: Gas, Timmy's Quick Stop.</p>
-						</div>
-					</div> 
-				</div> 
-				<div id="footer" style="text-align:center"></div> 
-			</div>
+							<div>
+								<h2 class="recent-transactions-title">Recent Transactions:</h2>
+							</div><!--recent-transaction container tag-->
+							<div class="transaction-space">
+								<div class="transaction-date">mm/dd/yyyy</div>
+								<div class="transaction-amount">Income: $2000.00</div>
+								<div class="transaction-description">Description: Little Pond Farms</div>
+							</div><!--transaction-space tag-->
+							<div class="transaction-space">
+								<div class="transaction-date">mm/dd/yyyy</div>
+								<div class="transaction-amount">Expense: $100.00</div>
+								<div class="transaction-description">Description: Water Bill</div>
+							</div><!--transaction-space tag-->
+							<div class="transaction-space">
+								<div class="transaction-date">mm/dd/yyyy</div>
+								<div class="transaction-amount">Expense: $50.00</div>
+								<div class="transaction-description">Description: Red Lobster. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+							</div><!--transaction-space tag-->
+							<div class="transaction-space">
+								<div class="transaction-date">mm/dd/yyyy</div>
+								<div class="transaction-amount">Expense: $10.00</div>
+								<div class="transaction-description">Description: Rite Aid</div>
+							</div><!--transaction-space tag-->
+							<div class="transaction-space">
+								<div class="transaction-date">mm/dd/yyyy</div>
+								<div class="transaction-amount">Expense: $30.00</div>
+								<div class="transaction-description">Description: Gas, Timmy's Quick Stop.</div>
+							</div><!--transaction-space tag-->
+						</div><!--transactions tag-->
+					</div><!--dashboard tag-->
+					<div class="push"></div> 
+				</div> <!--wrap tag--> 
+				<div class="footer" style="text-align:center">
+					<p>Created and designed by Charles Sprayberry & Dyana Sprayberry.</p>
+				</div><!--footer tag-->
+			</div><!--container tag-->
 		</body>
 </html>
