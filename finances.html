@@ -21,7 +21,7 @@
 								<input class="extra-hard-margin-right" type="radio" name="transaction-type" value="Income"/>
 								<label class="soft-margin-right">Expense:</label>
 								<input type="radio" name="transaction-type" value="Expense" />
-								<p><input name="amount" placeholder="Amount" /></p>
+								<p><input name="amount" placeholder="Amount" type="number" /></p>
 							</div> 
 							<div id="description-notes">
 								<label>Description:</label>
@@ -36,44 +36,42 @@
 					</div> 
 					<div id="dashboard">
 						<div class="stat-area">
-							<div id="income-stat">
-								<p class="stat-box">$999,999,999.00</p>
-								<div><h2>Income</h2></div>
+							<div class="stat-box">
+								<div>Income</div>
+								<p class="income-stat">$999,999.00</p>
 							</div> 
-							<div id="expense-stat">
-								<p class="stat-box">$999,999,999.00</p>
-								<div><h2>Expense</h2></div>
+							<div class="stat-box">
+								<div>Expense</div>
+								<p class="expense-stat">$999,999.00</p>
 							</div> 
-							<div id="balance-stat">
-								<p class="stat-box">$999,999,999.00</p>
-								<div><h2>Balance</h2></div>
+							<div class="stat-box">
+								<div>Balance</div>
+								<p class="balance-stat">$999,999.00</p>
 							</div> 
 						</div>
 						<div id="transactions">
-							<div>
-								<h2 class="recent-transactions-title">Recent Transactions:</h2>
-							</div>
-							<div class="transaction-space">
+							<h2>Recent Transactions</h2>
+							<div class="transaction-record">
 								<div class="transaction-date">mm/dd/yyyy</div>
 								<div class="transaction-amount">Income: $2000.00</div>
 								<div class="transaction-description">Description: Little Pond Farms</div>
 							</div>
-							<div class="transaction-space">
+							<div class="transaction-record">
 								<div class="transaction-date">mm/dd/yyyy</div>
 								<div class="transaction-amount">Expense: $100.00</div>
 								<div class="transaction-description">Description: Water Bill</div>
 							</div>
-							<div class="transaction-space">
+							<div class="transaction-record">
 								<div class="transaction-date">mm/dd/yyyy</div>
 								<div class="transaction-amount">Expense: $50.00</div>
 								<div class="transaction-description">Description: Red Lobster. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
 							</div>
-							<div class="transaction-space">
+							<div class="transaction-record">
 								<div class="transaction-date">mm/dd/yyyy</div>
 								<div class="transaction-amount">Expense: $10.00</div>
 								<div class="transaction-description">Description: Rite Aid</div>
 							</div>
-							<div class="transaction-space">
+							<div class="transaction-record">
 								<div class="transaction-date">mm/dd/yyyy</div>
 								<div class="transaction-amount">Expense: $30.00</div>
 								<div class="transaction-description">Description: Gas, Timmy's Quick Stop.</div>

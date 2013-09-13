@@ -42,7 +42,7 @@ h2, label {
 	font-family: Quattrocento, georgia, helvectica;
 	width: 5em;
 	height: 2.5em;
-	border: 1.5px solid #22E180;
+	/*border: 1.5px solid #22E180;*/
 	margin: 1em 0 1em 0;
 	padding: 0;
 	background: #1EB164;
@@ -72,22 +72,23 @@ h2, label {
 	padding: 2em 1em 1em 1em;
 }
 
-.stat-area { margin-bottom: 3em; }
+.stat-area { 
+	margin-bottom: 3em; 
+	overflow: auto;
+}
 
-#income-stat, #expense-stat, #balance-stat {
+.income-stat, .expense-stat, .balance-stat { font-size: 130%; }
+
+.stat-box {
 	text-align: center;
 	vertical-align: middle;
 	float: left;
-	padding: 1em 1em 1em 1em;
+	padding: 1em 1em 0em 1em;
 	margin-right: 2em;
 	border: 1px solid #22E180;
 }
 
-#transactions {
-	padding-top: 10em;
-}
-
-.recent-transactions-title {
+#transactions > h2 {
 	border-top: 1px solid #22E180;
 	padding-top: 1em;
 }
@@ -97,10 +98,9 @@ h2, label {
 	border-top: 1px solid #22E180;
 }
 
-.transaction-space {
+.transaction-record {
 	margin-bottom: 2em;
-	padding: 1em 1em 9em 1em;
-	border-bottom: 1px solid #22E180
+	overflow: auto;
 }
 
 .transaction-date {
@@ -139,6 +139,11 @@ h2, label {
 	color: white; 
 	font-family: Lato, Arial;
 	font-size: 55%;
+}
+
+input[type="number"], input[type="date"], textarea {
+	font-size: 115%;
+	padding: 2px;
 }
 
 .soft-padding-all, .soft-padding-top {padding-top: .5em; }
