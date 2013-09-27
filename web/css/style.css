@@ -57,9 +57,7 @@ h2, label {
 	line-height: 2em;
 	float: right;
 	margin: 2em 4em 0 0;
-	padding: 2em 2em 0 2em;
-	width: 30%;
-	border: 1px solid black;
+	width: 35%;
 }
 
 #dashboard { 

@@ -1,0 +1,34 @@
+.tab-list {
+    overflow: auto;
+    border-bottom: 1px solid gray;
+
+}
+
+.tab-list > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Lato, Arial;
+}
+
+.tab-list > ul li {
+    float: left;
+    margin-right: .25em;
+    font-size: 110%;
+    padding: .25em 1.25em;
+    border: 1px solid gray;
+    border-bottom: 0;
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+    border-bottom: 2px solid white;
+    position: relative;
+}
+
+.tab-list > ul li.active {
+    border: 2px solid red;
+}
+
+
+.tab:not(.active) {
+    display: none;
+}
