@@ -18,7 +18,6 @@ html, body {
 }
 
 p {
-	
 	margin: 0;
 	padding: 1em 0 1em 0;
 }
@@ -26,7 +25,8 @@ p {
 h1 {
 	font-family: Great Vibes, Arial, georgia;
 	font-size: 300%;
-	margin-left: 1em; 	
+	margin-left: 1em; 
+	color: black;	
 }	
 
 h2, label { 
@@ -90,40 +90,46 @@ h2, label {
 	border-bottom: 1px solid #22E180;
 }
 
-#description-notes, #calander-info {
+#transaction-notes, #calander-info {
 	padding-top: 2em;
 	border-top: 1px solid #22E180;
 }
 
+.transaction-types { padding-top: .75em; }
+
 .transaction-record {
-	margin-bottom: 2em;
 	overflow: auto;
+	clear: both;
 	color: #515151;
+	margin-bottom: 2em;
 }
 
 .transaction-date {
 	float: right;
 	margin-bottom: .5em;
-	overflow: auto;
 }
 
 .transaction-amount {
 	float: left;
 	margin: 0;
 	margin-bottom: .5em;
-	overflow: auto;
 }
 
-.transaction-description {
-	float: left;
+.transaction-tags { 
 	clear: both;
+	float: left;
+}
+
+.tag, .tag-removal { margin: 0;}
+
+.transaction-notes {
+	float: left;
 	padding-left: 1.5em;
-	overflow: auto;
+	margin-bottom: .75em;
 }
 .footer {
 	background-color: #515151;
 	border-top: 2px solid grey;
-	
 }
 .footer, .push {
 	width: 100%;

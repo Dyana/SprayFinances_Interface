@@ -25,10 +25,16 @@
 }
 
 .tab-list > ul li.active {
-    border: 2px solid red;
+    border: 2px solid #22E180;
 }
 
 
 .tab:not(.active) {
     display: none;
 }
+
+a { 
+    color: grey;
+}
+
+
